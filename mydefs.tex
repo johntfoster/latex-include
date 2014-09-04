@@ -1,0 +1,60 @@
+%
+%  mydefs.tex  
+%
+%  Command definitions that can be used in all documents that have
+%      \input{mydefs}
+%
+
+% CHANGE NEXT 3 LINES?
+% Define \be and \ee to start and end the equation environment.
+\usepackage{siunitx}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\ba}{\begin{align}}
+\newcommand{\ea}{\end{align}}
+
+\newcommand{\Kdyn}{\ensuremath{K_{I}(t)}}
+
+\newcommand{\eref}[1]{equation~(\ref{eqn:#1})}
+\newcommand{\Eref}[1]{Equation~(\ref{eqn:#1})}
+\newcommand{\epref}[1]{Eq.~(\ref{eqn:#1})}
+\newcommand{\Fref}[1]{Figure~\ref{fig:#1}}
+\newcommand{\Frefs}[2]{Figures~\ref{fig:#1} and \ref{fig:#2}}
+\newcommand{\fref}[1]{Fig.~\ref{fig:#1}}
+\newcommand{\sref}[1]{Section~\ref{sec:#1}}
+\newcommand{\tref}[1]{Table~\ref{tab:#1}}
+\newcommand{\cref}[1]{Chapter~\ref{chap:#1}}
+\newcommand{\aref}[1]{Appendix~\ref{chap:#1}}
+
+\newcommand{\registered}{\ensuremath{^{\mbox{\textregistered}}}}
+\newcommand{\Dl}{\ensuremath{\Delta \lambda}}
+\newcommand{\Dt}{\ensuremath{\Delta t}}
+
+% New units, for use with SIunitx package.
+\DeclareSIUnit{\rootmeter}{\ensuremath{\sqrt{\mbox{\meter}}}}
+
+% Math Stuff
+\let\grad=\nabla
+\newcommand{\diverg}{\ensuremath{\nabla \cdot}}
+\newcommand{\ugrad}{\ensuremath{\underline{\grad}}}
+\newcommand{\pd}[2]{\ensuremath{\frac{\partial #1}{\partial #2}}}
+\newcommand{\un}[1]{\ensuremath{\underline{#1}}}
+
+% Peridynamics Stuff
+\let\mbf=\mathbf
+%\newcommand{\Dt}{\ensuremath{\Delta t}}
+\newcommand{\state}[1]{\ensuremath{\underline{\mbf{#1}}}}
+\newcommand{\defstate}{\ensuremath{\state{Y}[\mbf{x},t]}}
+\newcommand{\bond}{\mbox{\ensuremath{\langle \boldsymbol{\xi} \rangle}}}
+\newcommand{\nbond}{\ensuremath{\langle \boldsymbol{-\xi} \rangle}}
+\newcommand{\bondlong}{\mbox{\ensuremath{\langle \mbf{x}'-\mbf{x} \rangle}}}
+\newcommand{\nbondlong}{\ensuremath{\langle \mbf{x}-\mbf{x}' \rangle}}
+\newcommand{\bxi}{\ensuremath{\boldsymbol{\xi}}}
+\newcommand{\bondxi}{\ensuremath{\langle \bxi \rangle}}
+
+%For use with latexmk
+\newcommand\inputfile[1]{%
+    \InputIfFileExists{#1}{}{\typeout{No file #1.}}%
+}
+
