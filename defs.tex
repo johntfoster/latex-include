@@ -91,7 +91,7 @@
 \NewDocumentCommand \s{ m o o }{%
     \IfNoValueTF{#3}{\stateTwo{#1}[#2]}%
     {
-    \underline{\mbf{#1}}(\mbf{#3})\an{#2}%
+    \underline{\mbf{#1}}({#3})\an{#2}%
     }
 }
 
@@ -116,3 +116,12 @@
 \NewDocumentCommand \scs{ m }{
     \underline{#1}%
 }
+
+\NewDocumentCommand \ds{ m }{
+    {\rm d}\scs{#1}%
+}
+
+\NewDocumentCommand \smag{ m }{
+    \vert\s{#1}\vert%
+}
+
