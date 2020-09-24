@@ -1,7 +1,7 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for John T. Foster at 2019-11-19 19:41:35 -0600 
+%% Created for John T. Foster at 2020-09-24 09:52:29 -0500 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -15,107 +15,119 @@
 
 @string{ijnmf = {International Journal for Numerical Methods in Fluids}}
 
+
+@article{masoud2020a,
+	Abstract = {The overarching goal of this work is to develop an accurate, robust, and stable methodology for finite deformation modeling using strong-form peridynamics (PD) and the correspondence modeling framework. We adopt recently developed methods that make use of higher-order corrections to improve the computation of integrals in the correspondence formulation. A unified approach is presented that incorporates the reproducing kernel (RK) and generalized moving least square (GMLS) approximations in PD to obtain non-local gradients of higher-order accuracy. We show, however, that the improved quadrature rule does not suffice to handle instability issues that have proven problematic for the correspondence model-based PD. In Part I of this paper, a bond-associative, higher-order core formulation is developed that naturally provides stability without introducing artificial stabilization parameters. Numerical examples are provided to study the convergence of RK-PD, GMLS-PD, and their bond-associated versions to a local counterpart, as the degree of non-locality (i.e., the horizon) approaches zero. Problems from linear elastostatics are utilized to verify the accuracy and stability of our approach. It is shown that the bond-associative approach improves the robustness of RK-PD and GMLS-PD formulations, which is essential for practical applications. The higher-order, bond-associated model can obtain second-order convergence for smooth problems and first-order convergence for problems involving field discontinuities, such as curvilinear free surfaces. In Part II of this paper, we use our unified PD framework to (a) study wave propagation phenomena, which have proven problematic for the state-based correspondence PD framework, and (b) propose a new methodology to enforce natural boundary conditions in correspondence PD formulations, which should be particularly appealing to coupled problems. Our results indicate that bond-associative methods accompanied by higher-order gradient corrections provide the key ingredients to obtain the necessary accuracy, stability, and robustness characteristics needed for engineering-scale simulations.},
+	Author = {Behzadinasab, M. and Foster, J.T. and Bazilevs, Y.},
+	Da = {2020/08/28},
+	Date-Added = {2020-09-24 09:43:28 -0500},
+	Date-Modified = {2020-09-24 09:46:25 -0500},
+	Doi = {10.1007/s42102-020-00039-6},
+	Id = {Behzadinasab2020},
+	Isbn = {2522-8978},
+	Journal = {{Journal of Peridynamics and Nonlocal Modeling}},
+	Title = {{A Unified, Stable, and Accurate Meshfree Framework for Peridynamic Correspondence Modeling---Part II: Wave Propagation and Enforcement of Stress Boundary Conditions}},
+	Year = {2020},
+	Bdsk-Url-1 = {https://doi.org/10.1007/s42102-020-00039-6}}
+
 @book{jaeger2009fundamentals,
-  title={Fundamentals of rock mechanics},
-  author={Jaeger, J.C. and Cook, N.G.W and Zimmerman, R.},
-  year={2009},
-  publisher={John Wiley \& Sons}
-}
+	Author = {Jaeger, J.C. and Cook, N.G.W and Zimmerman, R.},
+	Publisher = {John Wiley \& Sons},
+	Title = {Fundamentals of rock mechanics},
+	Year = {2009}}
 
 @phdthesis{york2018advanced,
-  title={Advanced hydraulic fracture modeling: peridynamics, inelasticity, and coupling to FEM},
-  author={York, J.R},
-  year={2018}
-}
+	Author = {York, J.R},
+	School = {The University of Texas at Austin},
+	Title = {Advanced hydraulic fracture modeling: peridynamics, inelasticity, and coupling to FEM},
+	Year = {2018}}
 
 @inproceedings{agrawal2020coupling,
-  title={Coupling Meshfree Peridynamics with the Classical Methods for Modeling Hydraulic Fracture Growth in Heterogeneous Reservoirs},
-  author={Agrawal, Shivam and York, J.R. and Foster, J.T. and Sharma, M.M},
-  booktitle={SPE/AAPG/SEG Unconventional Resources Technology Conference},
-  year={2020},
-  organization={Unconventional Resources Technology Conference}
-}
+	Author = {Agrawal, S. and York, J.R. and Foster, J.T. and Sharma, M.M},
+	Booktitle = {SPE/AAPG/SEG Unconventional Resources Technology Conference},
+	Organization = {Unconventional Resources Technology Conference},
+	Title = {Coupling Meshfree Peridynamics with the Classical Methods for Modeling Hydraulic Fracture Growth in Heterogeneous Reservoirs},
+	Year = {2020}}
 
 @article{leng2020a,
-title = "Asymptotically compatible reproducing kernel collocation and meshfree integration for the peridynamic Navier equation",
-journal = "Computer Methods in Applied Mechanics and Engineering",
-volume = "370",
-pages = "113264",
-year = "2020",
-issn = "0045-7825",
-doi = "10.1016/j.cma.2020.113264",
-author = "Y. Leng and X. Tian and N.A. Trask and J.T. Foster",
-keywords = "Peridynamic Navier equation, Reproducing kernel collocation, Convergence analysis, Quasi-discrete nonlocal operator, Meshfree integration, Asymptotically compatible schemes"
-}
+	Author = {Y. Leng and X. Tian and N.A. Trask and J.T. Foster},
+	Doi = {10.1016/j.cma.2020.113264},
+	Issn = {0045-7825},
+	Journal = {Computer Methods in Applied Mechanics and Engineering},
+	Keywords = {Peridynamic Navier equation, Reproducing kernel collocation, Convergence analysis, Quasi-discrete nonlocal operator, Meshfree integration, Asymptotically compatible schemes},
+	Pages = {113264},
+	Title = {Asymptotically compatible reproducing kernel collocation and meshfree integration for the peridynamic Navier equation},
+	Volume = {370},
+	Year = {2020},
+	Bdsk-Url-1 = {https://doi.org/10.1016/j.cma.2020.113264}}
 
 @article{xu2020,
 	Author = {X. Xu and J.T. Foster},
+	Doi = {10.1007/s42102-020-00037-8},
 	Journal = {Journal of Peridynamics and Nonlocal Modeling},
 	Title = {Deriving Peridynamic Influence Functions for One-dimensional Elastic Materials with Periodic Microstructure},
-    doi = "10.1007/s42102-020-00037-8",
-	Year = {2020}
-}
-
+	Year = {2020},
+	Bdsk-Url-1 = {https://doi.org/10.1007/s42102-020-00037-8}}
 
 @misc{kumar2020revisiting,
-  title={Revisiting nucleation in the phase-field approach to brittle fracture},
-  author={Kumar, Aditya and Bourdin, Blaise and Francfort, Gilles A and Lopez-Pamies, Oscar},
-  year={2020},
-  publisher={preparation}
-}
+	Author = {Kumar, A. and Bourdin, B. and Francfort, G.A. and Lopez-Pamies, O.},
+	Journal = {Journal of the Mechanics and Physics of Solids},
+	Pages = {104027},
+	Publisher = {Elsevier},
+	Title = {Revisiting nucleation in the phase-field approach to brittle fracture},
+	Volume = {142},
+	Year = {2020}}
 
 @article{kumar2018fracture,
-  title={Fracture and healing of elastomers: A phase-transition theory and numerical implementation},
-  author={Kumar, Aditya and Francfort, Gilles A and Lopez-Pamies, Oscar},
-  journal={Journal of the Mechanics and Physics of Solids},
-  volume={112},
-  pages={523--551},
-  year={2018},
-  publisher={Elsevier}
-}
+	Author = {Kumar, A. and Francfort, G. A and Lopez-Pamies, O.},
+	Journal = {Journal of the Mechanics and Physics of Solids},
+	Pages = {523--551},
+	Publisher = {Elsevier},
+	Title = {Fracture and healing of elastomers: A phase-transition theory and numerical implementation},
+	Volume = {112},
+	Year = {2018}}
 
 @article{mcclure2016fracture,
-  title={The Fracture-Compliance Method for Picking Closure Pressure From Diagnostic Fracture-Injection Tests (see associated supplementary discussion/reply)},
-  author={McClure, Mark W and Jung, Hojung and Cramer, Dave D and Sharma, Mukul M and others},
-  journal={SPE Journal},
-  volume={21},
-  number={04},
-  pages={1--321},
-  year={2016},
-  publisher={Society of Petroleum Engineers}
-}
+	Author = {McClure, M.W. and Jung, H. and Cramer, D.D. and Sharma, M.M.},
+	Journal = {SPE Journal},
+	Number = {04},
+	Pages = {1--321},
+	Publisher = {Society of Petroleum Engineers},
+	Title = {The Fracture-Compliance Method for Picking Closure Pressure From Diagnostic Fracture-Injection Tests (see associated supplementary discussion/reply)},
+	Volume = {21},
+	Year = {2016}}
 
 @article{agrawal2020,
-title = "Coupling of meshfree peridynamics with the Finite Volume Method for poroelastic problems",
-journal = "Journal of Petroleum Science and Engineering",
-pages = "107252",
-year = "2020",
-issn = "0920-4105",
-doi = "10.1016/j.petrol.2020.107252",
-author = "S. Agrawal and S. Zheng and J.T. Foster and M.M. Sharma",
-keywords = "Peridynamics, Finite volume method, Poroelasticity;Geomechanics, Hydraulic fracturing, Reservoir engineering",
-}
+	Author = {S. Agrawal and S. Zheng and J.T. Foster and M.M. Sharma},
+	Doi = {10.1016/j.petrol.2020.107252},
+	Issn = {0920-4105},
+	Journal = {Journal of Petroleum Science and Engineering},
+	Keywords = {Peridynamics, Finite volume method, Poroelasticity;Geomechanics, Hydraulic fracturing, Reservoir engineering},
+	Pages = {107252},
+	Title = {Coupling of meshfree peridynamics with the Finite Volume Method for poroelastic problems},
+	Year = {2020},
+	Bdsk-Url-1 = {https://doi.org/10.1016/j.petrol.2020.107252}}
 
 @article{behzadinasab2020b,
-title = {Revisiting the third Sandia Fracture Challenge: a bond-associated, semi-Lagrangian peridynamic approach to modeling large deformation and ductile fracture},
-journal = {International Journal of Fracture},
-year = "2020",
-doi = "10.1007/s10704-020-00455-1",
-author = "M. Behzadinasab and J.T. Foster",
-}
+	Author = {M. Behzadinasab and J.T. Foster},
+	Doi = {10.1007/s10704-020-00455-1},
+	Journal = {International Journal of Fracture},
+	Title = {Revisiting the third Sandia Fracture Challenge: a bond-associated, semi-Lagrangian peridynamic approach to modeling large deformation and ductile fracture},
+	Year = {2020},
+	Bdsk-Url-1 = {https://doi.org/10.1007/s10704-020-00455-1}}
 
 @article{behzadinasab2020a,
-title = "A semi-Lagrangian constitutive correspondence framework for peridynamics",
-journal = "Journal of the Mechanics and Physics of Solids",
-pages = "103862",
-volume = "137",
-month = "April",
-year = "2020",
-issn = "0022-5096",
-doi = "10.1016/j.jmps.2019.103862",
-author = "M. Behzadinasab and J.T. Foster",
-keywords = "Peridynamics, Semi-Lagrangian, Correspondence modeling, Extreme events, Nonlocal",
-}
+	Author = {M. Behzadinasab and J.T. Foster},
+	Doi = {10.1016/j.jmps.2019.103862},
+	Issn = {0022-5096},
+	Journal = {Journal of the Mechanics and Physics of Solids},
+	Keywords = {Peridynamics, Semi-Lagrangian, Correspondence modeling, Extreme events, Nonlocal},
+	Month = {April},
+	Pages = {103862},
+	Title = {A semi-Lagrangian constitutive correspondence framework for peridynamics},
+	Volume = {137},
+	Year = {2020},
+	Bdsk-Url-1 = {https://doi.org/10.1016/j.jmps.2019.103862}}
 
 @article{katiyar2019,
 	Author = {A. Katiyar and S. Agrawal and H. Ouchi and P. Seleson and J.T. Foster and M.M. Sharma},
@@ -125,7 +137,8 @@ keywords = "Peridynamics, Semi-Lagrangian, Correspondence modeling, Extreme even
 	Issn = {0021-9991},
 	Journal = {Journal of Computational Physics},
 	Title = {{A general peridynamics model for multiphase transport of non-Newtonian compressible fluids in porous media}},
-	Year = {2019}}
+	Year = {2019},
+	Bdsk-Url-1 = {https://doi.org/10.1016/j.jcp.2019.109075}}
 
 @article{behzadinasab2019a,
 	Abstract = {A class of peridynamic material models known as constitutive correspondence models provide a bridge between classical continuum mechanics and peridynamics. These models are useful because they allow well-established local constitutive theories to be used within the nonlocal framework of peridynamics. A recent finite deformation correspondence theory (Foster and Xu, 2018) was developed and reported to improve stability properties of the original correspondence model (Silling et al., 2007). This paper presents a stability analysis that indicates the reported advantages of the new theory were overestimated. Homogeneous deformations are analyzed and shown to exibit unstable material behavior at the continuum level. Additionally, the effects of a particle discretization on the stability of the model are reported. Numerical examples demonstrate the large errors induced by the unstable behavior. Stabilization strategies and practical applications of the new finite deformation model are discussed.},
@@ -223,7 +236,7 @@ keywords = "Peridynamics, Semi-Lagrangian, Correspondence modeling, Extreme even
 	Bdsk-Url-1 = {https://doi.org/10.1016/j.ijsolstr.2018.02.026}}
 
 @article{liu2016self,
-	Author = {Liu, Zeliang and Bessa, MA and Liu, Wing Kam},
+	Author = {Liu, Z. and Bessa, M.A. and Liu, W.K.},
 	Date-Added = {2018-03-27 02:15:26 +0000},
 	Date-Modified = {2018-03-27 02:15:26 +0000},
 	Journal = {Computer Methods in Applied Mechanics and Engineering},
@@ -234,7 +247,7 @@ keywords = "Peridynamics, Semi-Lagrangian, Correspondence modeling, Extreme even
 	Year = {2016}}
 
 @book{fang2005design,
-	Author = {Fang, Kai-Tai and Li, Runze and Sudjianto, Agus},
+	Author = {Fang, K.T. and Li, R. and Sudjianto, A.},
 	Date-Added = {2018-03-27 02:03:42 +0000},
 	Date-Modified = {2018-03-27 02:03:42 +0000},
 	Publisher = {CRC Press},
@@ -242,7 +255,7 @@ keywords = "Peridynamics, Semi-Lagrangian, Correspondence modeling, Extreme even
 	Year = {2005}}
 
 @article{simpson2001sampling,
-	Author = {Simpson, Timothy W and Lin, Dennis KJ and Chen, Wei},
+	Author = {Simpson, T.W. and Lin, D.K.J. and Chen, W.},
 	Date-Added = {2018-03-27 02:02:26 +0000},
 	Date-Modified = {2018-03-27 02:02:26 +0000},
 	Journal = {International Journal of Reliability and Applications},
@@ -254,7 +267,7 @@ keywords = "Peridynamics, Semi-Lagrangian, Correspondence modeling, Extreme even
 	Year = {2001}}
 
 @article{magallanes2008importance,
-	Author = {Magallanes, JM},
+	Author = {Magallanes, J.M.},
 	Date-Added = {2018-03-26 21:26:26 +0000},
 	Date-Modified = {2018-03-26 21:26:26 +0000},
 	Journal = {Structures under shock and impact X},
@@ -265,14 +278,13 @@ keywords = "Peridynamics, Semi-Lagrangian, Correspondence modeling, Extreme even
 	Year = {2008}}
 
 @book{zoback2010reservoir,
-  title={Reservoir geomechanics},
-  author={Zoback, Mark D},
-  year={2010},
-  publisher={Cambridge University Press}
-}
+	Author = {Zoback, M.D.},
+	Publisher = {Cambridge University Press},
+	Title = {Reservoir geomechanics},
+	Year = {2010}}
 
 @article{zoback1985well,
-	Author = {Zoback, Mark D and Moos, Daniel and Mastin, Larry and Anderson, Roger N},
+	Author = {Zoback, M.D. and Moos, D. and Mastin, L. and Anderson, R.N.},
 	Date-Added = {2018-03-26 20:04:42 +0000},
 	Date-Modified = {2018-03-26 20:04:42 +0000},
 	Journal = {Journal of Geophysical Research: Solid Earth},
@@ -284,7 +296,7 @@ keywords = "Peridynamics, Semi-Lagrangian, Correspondence modeling, Extreme even
 	Year = {1985}}
 
 @book{amadei1997rock,
-	Author = {Amadei, Bernard and Stephansson, Ove},
+	Author = {Amadei, B. and Stephansson, O.},
 	Date-Added = {2018-03-26 19:43:03 +0000},
 	Date-Modified = {2018-03-26 19:43:03 +0000},
 	Publisher = {Springer Science \& Business Media},
@@ -893,31 +905,28 @@ keywords = "Peridynamics, Semi-Lagrangian, Correspondence modeling, Extreme even
 	Bdsk-Url-2 = {http://dx.doi.org/10.1115/1.4032856}}
 
 @article{mcclure2016fully,
-  title={Fully coupled hydromechanical simulation of hydraulic fracturing in 3D discrete-fracture networks},
-  author={McClure, M.W and Babazadeh, M. and Shiozawa, S. and Huang, J. and others},
-  journal={SPE Journal},
-  volume={21},
-  number={04},
-  pages={1--302},
-  year={2016},
-  publisher={Society of Petroleum Engineers}
-}
+	Author = {McClure, M.W and Babazadeh, M. and Shiozawa, S. and Huang, J. and others},
+	Journal = {SPE Journal},
+	Number = {04},
+	Pages = {1--302},
+	Publisher = {Society of Petroleum Engineers},
+	Title = {Fully coupled hydromechanical simulation of hydraulic fracturing in 3D discrete-fracture networks},
+	Volume = {21},
+	Year = {2016}}
 
 @article{manchanda2020integrating,
-  title={Integrating Reservoir Geomechanics with Multiple Fracture Propagation and Proppant Placement},
-  author={Manchanda, R. and Zheng, S. and Hirose, S. and Sharma, M.M.},
-  journal={SPE Journal},
-  year={2020},
-  publisher={Society of Petroleum Engineers}
-}
+	Author = {Manchanda, R. and Zheng, S. and Hirose, S. and Sharma, M.M.},
+	Journal = {SPE Journal},
+	Publisher = {Society of Petroleum Engineers},
+	Title = {Integrating Reservoir Geomechanics with Multiple Fracture Propagation and Proppant Placement},
+	Year = {2020}}
 
 @inproceedings{mcclure2017three,
-  title={A three-dimensional reservoir, wellbore, and hydraulic fracturing simulator that is compositional and thermal, tracks proppant and water solute transport, includes non-darcy and non-newtonian flow, and Handles fracture closure},
-  author={McClure, M.W. and Kang, C.A.},
-  booktitle={SPE Reservoir Simulation Conference},
-  year={2017},
-  organization={Society of Petroleum Engineers}
-}
+	Author = {McClure, M.W. and Kang, C.A.},
+	Booktitle = {SPE Reservoir Simulation Conference},
+	Organization = {Society of Petroleum Engineers},
+	Title = {A three-dimensional reservoir, wellbore, and hydraulic fracturing simulator that is compositional and thermal, tracks proppant and water solute transport, includes non-darcy and non-newtonian flow, and Handles fracture closure},
+	Year = {2017}}
 
 @article{dowell2016,
 	Author = {Dowell, E. and McHugh, K.A.},
@@ -1238,7 +1247,7 @@ keywords = "Peridynamics, Semi-Lagrangian, Correspondence modeling, Extreme even
 	Volume = {65},
 	Year = {2006},
 	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxB2Li4vLi4vUmVmZXJlbmNlL1BhcGVycy9CeUF1dGhvci9PcnRpei9BcnJveW9fZXRfYWwtMjAwNi1JbnRlcm5hdGlvbmFsX0pvdXJuYWxfZm9yX051bWVyaWNhbF9NZXRob2RzX2luX0VuZ2luZWVyaW5nLnBkZk8RAooAAAAAAooAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9BcnJveW9fZXRfYWwtMjAwNi0jRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAIABQAACiBjdQAAAAAAAAAAAAAAAAAFT3J0aXoAAAIAhy86VXNlcnM6am9objpEb2N1bWVudHM6UmVmZXJlbmNlOlBhcGVyczpCeUF1dGhvcjpPcnRpejpBcnJveW9fZXRfYWwtMjAwNi1JbnRlcm5hdGlvbmFsX0pvdXJuYWxfZm9yX051bWVyaWNhbF9NZXRob2RzX2luX0VuZ2luZWVyaW5nLnBkZgAADgCiAFAAQQByAHIAbwB5AG8AXwBlAHQAXwBhAGwALQAyADAAMAA2AC0ASQBuAHQAZQByAG4AYQB0AGkAbwBuAGEAbABfAEoAbwB1AHIAbgBhAGwAXwBmAG8AcgBfAE4AdQBtAGUAcgBpAGMAYQBsAF8ATQBlAHQAaABvAGQAcwBfAGkAbgBfAEUAbgBnAGkAbgBlAGUAcgBpAG4AZwAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAhVVzZXJzL2pvaG4vRG9jdW1lbnRzL1JlZmVyZW5jZS9QYXBlcnMvQnlBdXRob3IvT3J0aXovQXJyb3lvX2V0X2FsLTIwMDYtSW50ZXJuYXRpb25hbF9Kb3VybmFsX2Zvcl9OdW1lcmljYWxfTWV0aG9kc19pbl9FbmdpbmVlcmluZy5wZGYAABMAAS8AABUAAgAL//8AAAAIAA0AGgAkAJ0AAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAADKw==},
-	Bdsk-File-2 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAdLi4vLi4vLi4vRG93bmxvYWRzL2V4cG9ydC5yaXNPEQFsAAAAAAFsAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADUL1EJSCsAAAAMN2sKZXhwb3J0LnJpcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADie539W3yGEAAAAAAAAAAAADAAIAAAkgAAAAAAAAAAAAAAAAAAAACURvd25sb2FkcwAAEAAIAADUL5dZAAAAEQAIAADVuA6xAAAAAQAMAAw3awAMN2cABmDQAAIAL01hY2ludG9zaCBIRDpVc2VyczoAam9objoARG93bmxvYWRzOgBleHBvcnQucmlzAAAOABYACgBlAHgAcABvAHIAdAAuAHIAaQBzAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAH1VzZXJzL2pvaG4vRG93bmxvYWRzL2V4cG9ydC5yaXMAABMAAS8AABUAAgAL//8AAAAIAA0AGgAkAEQAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAABtA==}}
+	Bdsk-File-2 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAdLi4vLi4vLi4vRG93bmxvYWRzL2V4cG9ydC5yaXNPEQE2AAAAAAE2AAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8KZXhwb3J0LnJpcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAADAAIAAAogY3UAAAAAAAAAAAAAAAAACURvd25sb2FkcwAAAgAhLzpVc2Vyczpqb2huOkRvd25sb2FkczpleHBvcnQucmlzAAAOABYACgBlAHgAcABvAHIAdAAuAHIAaQBzAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAH1VzZXJzL2pvaG4vRG93bmxvYWRzL2V4cG9ydC5yaXMAABMAAS8AABUAAgAL//8AAAAIAA0AGgAkAEQAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAABfg==}}
 
 @phdthesis{gupta2014improved,
 	Author = {Gupta, Varun},
@@ -3707,39 +3716,33 @@ keywords = "Peridynamics, Semi-Lagrangian, Correspondence modeling, Extreme even
 	Year = {2013}}
 
 @article{shahriari2020deep,
-  title={A deep learning approach to the inversion of borehole resistivity measurements},
-  author={Shahriari, M. and Pardo, D. and Pic{\'o}n, A. and Galdran, A. and Del Ser, J. and Torres-Verd{\'\i}n, C.},
-  journal={Computational Geosciences},
-  pages={1--24},
-  year={2020},
-  publisher={Springer}
-}
+	Author = {Shahriari, M. and Pardo, D. and Pic{\'o}n, A. and Galdran, A. and Del Ser, J. and Torres-Verd{\'\i}n, C.},
+	Journal = {Computational Geosciences},
+	Pages = {1--24},
+	Publisher = {Springer},
+	Title = {A deep learning approach to the inversion of borehole resistivity measurements},
+	Year = {2020}}
 
 @inproceedings{deng2020bayesian,
-  title={Bayesian Method for Rapid Multi-Well Interpretation of Well Logs and Core Data in Unconventional Formations},
-  author={Deng, T. and Amb{\'\i}a, J. and Torres-Verd{\'\i}n, C.},
-  booktitle={SPWLA 61st Annual Logging Symposium-Online},
-  year={2020},
-  organization={Society of Petrophysicists and Well-Log Analysts}
-}
+	Author = {Deng, T. and Amb{\'\i}a, J. and Torres-Verd{\'\i}n, C.},
+	Booktitle = {SPWLA 61st Annual Logging Symposium-Online},
+	Organization = {Society of Petrophysicists and Well-Log Analysts},
+	Title = {Bayesian Method for Rapid Multi-Well Interpretation of Well Logs and Core Data in Unconventional Formations},
+	Year = {2020}}
 
 @article{paszke2017automatic,
-  title={Automatic differentiation in PyTorch},
-  author={Paszke, Adam and Gross, Sam and Chintala, Soumith and Chanan, Gregory and Yang, Edward and DeVito, Zachary and Lin, Zeming and Desmaison, Alban and Antiga, Luca and Lerer, Adam},
-  year={2017}
-}
+	Author = {Paszke, A. and Gross, S. and Chintala, S. and Chanan, G. and Yang, E. and DeVito, Z. and Lin, Z. and Desmaison, A. and Antiga, L. and Lerer, A.},
+	Journal = {OpenReview},
+	Title = {"Automatic differentiation in PyTorch"},
+	Year = {2017}}
 
 @article{scikit-learn,
- title={Scikit-learn: Machine Learning in {P}ython},
- author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
-         and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
-         and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
-         Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
- journal={Journal of Machine Learning Research},
- volume={12},
- pages={2825--2830},
- year={2011}
-}
+	Author = {Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V. and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P. and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+	Journal = {Journal of Machine Learning Research},
+	Pages = {2825--2830},
+	Title = {Scikit-learn: Machine Learning in {P}ython},
+	Volume = {12},
+	Year = {2011}}
 
 @book{eldred2007dakota,
 	Author = {Eldred, M.S. and Giunta, A.A. and van Bloemen Waanders, B.G. and Wojtkiewicz, S.F. and Hart, W.E. and Alleva, M.P.},
