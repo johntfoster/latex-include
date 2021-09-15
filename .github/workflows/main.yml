@@ -1,0 +1,13 @@
+on: push
+jobs:
+  trigger-scoring:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: actions/checkout@v2
+      - name: Trigger Scoring
+        shell: bash -l {0}
+        run: |
+          curl --request POST \
+          --url 'https://api.github.com/repos/johntfoster/CV/dispatches' \
+          --header 'authorization: Bearer ${{secrets.GH_SECRET_TOKEN}}' \
+          --data '{"event_type": "trigger"}'
