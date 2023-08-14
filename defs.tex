@@ -7,8 +7,34 @@
 \newcommand{\dx}{\, {\rm d}\mathbf{x}}
 \newcommand{\dVblank}{\, {\rm d}V}
 \newcommand{\dxi}{\, {\rm d}\bxi}
+\newcommand{\deta}{\, {\rm d}\bs\eta}
 \newcommand{\fr}{\underline{\nabla}}
 \newcommand{\eps}{\varepsilon}
+
+\NewDocumentCommand \snsI{ m m o }{%
+    \IfNoValueTF{#3}{\underline{\mbf{#1}}_{#2}}%
+    {
+      \underline{\mbf{#1}}_{#2}(#3)%
+    }
+}
+
+\NewDocumentCommand \stateOneN{ m }{
+    \underline{#1}%
+}
+
+\NewDocumentCommand \stateTwoN{ m o }{%
+    \IfNoValueTF{#2}{\stateOneN{#1}}
+    {
+    \stateOneN{#1}\an{#2}%
+    }
+}
+
+\NewDocumentCommand \sN{ m o o }{%
+    \IfNoValueTF{#3}{\stateTwoN{#1}[#2]}%
+    {
+    \underline{#1}(#3)\an{#2}%
+    }
+}
 
 \NewDocumentCommand \dV{ o }{%
     \IfNoValueTF{#1}{\dVblank}%
@@ -107,12 +133,12 @@
     }
 }
 
-\NewDocumentCommand \si{ m m o o }{%
-    \IfNoValueTF{#4}{\stateTwoI{#1}{#2}[#3]}%
-    {
-        \stateOneI{#1}{#2}(\mbf{#4})\an{#3}
-    }
-}
+% \NewDocumentCommand \si{ m m o o }{%
+%     \IfNoValueTF{#4}{\stateTwoI{#1}{#2}[#3]}%
+%     {
+%         \stateOneI{#1}{#2}(\mbf{#4})\an{#3}
+%     }
+% }
 
 \NewDocumentCommand \scs{ m }{
     \underline{#1}%
